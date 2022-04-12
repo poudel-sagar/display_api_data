@@ -25,6 +25,7 @@ class DataFromAPI extends StatefulWidget {
 }
 
 class _DataFromAPIState extends State<DataFromAPI> {
+  //asynchronous
   Future getUserData() async {
     var response =
         await http.get(Uri.http('jsonplaceholder.typicode.com', 'users'));
